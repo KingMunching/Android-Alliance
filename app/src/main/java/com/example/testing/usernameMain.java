@@ -1,10 +1,10 @@
-package com.example.myapplication;
+package com.example.testing;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class usernameMain extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
