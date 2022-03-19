@@ -4,12 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerInParent="false"
-    android:layout_centerHorizontal="true"
-    android:layout_centerVertical="false"
-    android:background="#80323232"
-    android:backgroundTint="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".Difficulty">
 
     <TextView
         android:id="@+id/textView2"
@@ -21,7 +16,7 @@
         android:foregroundTint="#F44336"
         android:minHeight="48dp"
         android:text="Please select difficulty level"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textColorLink="#F44336"
         android:textIsSelectable="true"
         android:textSize="34sp"
@@ -68,3 +63,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+

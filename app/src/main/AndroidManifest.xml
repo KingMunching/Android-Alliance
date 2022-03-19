@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Testing">
         <activity
-            android:name=".UsernameScreen"
+            android:name=".Diffuculty"
+            android:exported="false" />
+        <activity
+            android:name=".Username"
             android:exported="false" />
         <activity
             android:name=".AttemptsScreen"

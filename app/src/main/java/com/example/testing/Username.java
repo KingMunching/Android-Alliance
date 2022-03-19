@@ -7,32 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Username extends AppCompatActivity {
 
     Button button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_username);
 
-        button = findViewById(R.id.button);
+        button = findViewById(R.id.username_button);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toUsernameScreen();
+                toDifficultyScreen();
             }
         });
 
-
     }
-
-    public void toUsernameScreen(){
-        Intent i = new Intent(this,Username.class);
+    public void toDifficultyScreen(){
+        Intent i = new Intent(this, Difficulty.class);
         startActivity(i);
     }
-
-
-
-
 }

@@ -107,7 +107,6 @@
         android:layout_width="213dp"
         android:layout_height="98dp"
         android:backgroundTint="#0D8DDF"
-        android:onClick="toUsernameScreen"
         android:text="Tap To Play"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
