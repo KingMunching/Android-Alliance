@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Testing">
         <activity
+            android:name=".ThemesScreen"
+            android:exported="false" />
+        <activity
             android:name=".AttemptsScreen"
             android:exported="false" />
         <activity
