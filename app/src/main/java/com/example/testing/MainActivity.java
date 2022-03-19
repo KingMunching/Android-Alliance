@@ -14,6 +14,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void toUsernameScreen(View v){
 
+        Intent i = new Intent(this,UsernameScreen.class);
+        startActivity(i);
+    }
+
+    public void toDifficultyScreen(View v){
+
+        Intent i = new Intent(this,DifficultyScreen.class);
+        startActivity(i);
+    }
+
+    public void toAttemptsScreen(View v){
+
+        Intent i = new Intent(this,AttemptsScreen.class);
+        startActivity(i);
+    }
 
 }

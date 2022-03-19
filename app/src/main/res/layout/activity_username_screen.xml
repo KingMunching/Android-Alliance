@@ -39,6 +39,7 @@
         android:layout_width="170dp"
         android:layout_height="60dp"
         android:layout_marginTop="50dp"
+        android:onClick="toDifficultyScreen"
         android:text="confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

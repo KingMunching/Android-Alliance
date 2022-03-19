@@ -5,18 +5,15 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Guessing Game"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Testing">
         <activity
-            android:name=".ThemesScreen"
+            android:name=".UsernameScreen"
             android:exported="false" />
         <activity
             android:name=".AttemptsScreen"
-            android:exported="false" />
-        <activity
-            android:name=".AttemptScreen"
             android:exported="false" />
         <activity
             android:name=".GameScreen"
