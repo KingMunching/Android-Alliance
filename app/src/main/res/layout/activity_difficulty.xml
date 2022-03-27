@@ -16,7 +16,7 @@
         android:foregroundTint="#F44336"
         android:minHeight="48dp"
         android:text="Please select difficulty level"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textColorLink="#F44336"
         android:textIsSelectable="true"
         android:textSize="34sp"
