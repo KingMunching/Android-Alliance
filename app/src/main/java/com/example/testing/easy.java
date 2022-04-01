@@ -13,7 +13,7 @@ import java.util.Random;
 public class easy extends AppCompatActivity {
     int n;
     int point = 0;
-    private int attempts = 0;
+    private int attempts = 7;
     String message = "";
 
     public void randomNumberGenerator(){
@@ -28,7 +28,7 @@ public class easy extends AppCompatActivity {
 
 
             if (n != guessInt) {
-                attempts++;
+                attempts--;
                 message = "guess again";
                 TextView result = (TextView) findViewById(R.id.result);
                 result.setText("Try Again!");
@@ -36,13 +36,15 @@ public class easy extends AppCompatActivity {
                 attempView.setText("Attempts: " + attempts);
 
             }
-            else if (attempts == 7){
+            else if (attempts == 0){
                 message = "You Lost!";
             }
+
             else {
                 message = "Correct!";
                 Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
                 point++;
+                attempts--;
                 TextView txt = (TextView) findViewById(R.id.Score);
                 txt.setText("Score: " +point);
                 TextView result = (TextView) findViewById(R.id.result);
