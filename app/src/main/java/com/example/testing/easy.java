@@ -2,6 +2,7 @@ package com.example.testing;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -36,8 +37,8 @@ public class easy extends AppCompatActivity {
                 attempView.setText("Attempts: " + attempts);
 
             }
-            else if (attempts == 0){
-                message = "You Lost!";
+            if (attempts == 0){
+                startActivity(new Intent(this,StatsScreen.class));
             }
 
             else {
