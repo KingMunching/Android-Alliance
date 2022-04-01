@@ -26,7 +26,7 @@ public class Username extends AppCompatActivity {
 
     }
     public void toDifficultyScreen(){
-        Intent i = new Intent(this, Difficulty.class);
+        Intent i = new Intent(this, AttemptsScreen.class);
         startActivity(i);
     }
 }
