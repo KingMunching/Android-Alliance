@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-public class GameScreen extends AppCompatActivity {
+public class easy extends AppCompatActivity {
     int n;
     String message = "";
 
@@ -18,24 +18,30 @@ public class GameScreen extends AppCompatActivity {
         n = rand.nextInt(10)+1;
     }
 
-    public void guess(View view){
+    public void guess(View view) {
+        randomNumberGenerator();
         EditText guess = (EditText) findViewById(R.id.guess);
         int guessInt = Integer.parseInt(guess.getText().toString());
-
-        if (n != guessInt){
-            message = "guess again";
+        for (int i = 0; i < 21; i++) {
+            if (n != guessInt) {
+                message = "guess again";
+            }
+            else if (i == 20){
+                message = "You Lost!";
+            }
+            else {
+                message = "Correct!";
+                Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+                break;
+            }
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
         }
-        else {
-            message = "Correct!";
-        }
-
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_screen);
+        setContentView(R.layout.easy);
     }
 }

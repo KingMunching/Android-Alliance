@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Testing">
         <activity
+            android:name=".hard"
+            android:exported="false" />
+        <activity
+            android:name=".medium"
+            android:exported="false" />
+        <activity
             android:name=".Diffuculty"
             android:exported="false" />
         <activity
@@ -19,7 +25,7 @@
             android:name=".AttemptsScreen"
             android:exported="false" />
         <activity
-            android:name=".GameScreen"
+            android:name=".easy"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
