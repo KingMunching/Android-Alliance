@@ -16,18 +16,18 @@ public class medium extends AppCompatActivity {
 
     public void randomNumberGenerator(){
         Random rand = new  Random();
-        n = rand.nextInt(50)+1;
+        n = rand.nextInt(15)+1;
     }
 
     public void guess2(View view) {
         randomNumberGenerator();
         EditText guess2 = (EditText) findViewById(R.id.guess2);
         int guess2Int = Integer.parseInt(guess2.getText().toString());
-        for (int i = 0; i < 51; i++) {
+        for (int i = 0; i < 8; i++) {
             if (n != guess2Int) {
                 message = "guess2 again";
             }
-            else if (i == 50){
+            else if (i == 7){
                 message = "You Lost!";
             }
             else {

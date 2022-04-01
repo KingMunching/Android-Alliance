@@ -22,11 +22,11 @@ public class easy extends AppCompatActivity {
         randomNumberGenerator();
         EditText guess = (EditText) findViewById(R.id.guess);
         int guessInt = Integer.parseInt(guess.getText().toString());
-        for (int i = 0; i < 21; i++) {
+        for (int i = 0; i < 8; i++) {
             if (n != guessInt) {
                 message = "guess again";
             }
-            else if (i == 20){
+            else if (i == 7){
                 message = "You Lost!";
             }
             else {
