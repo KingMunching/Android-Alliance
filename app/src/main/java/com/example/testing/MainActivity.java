@@ -31,10 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,Username.class);
         startActivity(i);
     }
-    public void toUsernameScree(){
-        Intent i = new Intent(this,Username.class);
-        startActivity(i);
-    }
+
 
 
 
