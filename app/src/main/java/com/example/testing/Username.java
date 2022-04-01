@@ -20,12 +20,12 @@ public class Username extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toDifficultyScreen();
+                toAttemptsScreen();
             }
         });
 
     }
-    public void toDifficultyScreen(){
+    public void toAttemptsScreen(){
         Intent i = new Intent(this, AttemptsScreen.class);
         startActivity(i);
     }

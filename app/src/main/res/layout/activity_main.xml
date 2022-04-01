@@ -103,7 +103,7 @@
         app:layout_constraintVertical_bias="0.063" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/easy"
         android:layout_width="213dp"
         android:layout_height="98dp"
         android:backgroundTint="#0D8DDF"
