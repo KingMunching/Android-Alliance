@@ -16,18 +16,18 @@ public class hard extends AppCompatActivity {
 
     public void randomNumberGenerator(){
         Random rand = new  Random();
-        n = rand.nextInt(100)+1;
+        n = rand.nextInt(20)+1;
     }
 
     public void guess3(View view) {
         randomNumberGenerator();
         EditText guess3 = (EditText) findViewById(R.id.guess3);
         int guess3Int = Integer.parseInt(guess3.getText().toString());
-        for (int i = 0; i < 101; i++) {
+        for (int i = 0; i < 8; i++) {
             if (n != guess3Int) {
                 message = "guess3 again";
             }
-            else if (i == 100){
+            else if (i == 7){
                 message = "You Lost!";
             }
             else {
