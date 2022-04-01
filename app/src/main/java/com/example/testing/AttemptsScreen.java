@@ -36,6 +36,7 @@ public class AttemptsScreen extends AppCompatActivity {
                 toMediumDifficulty();
             }
         });
+
         hardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

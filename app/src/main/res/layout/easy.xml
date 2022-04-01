@@ -7,11 +7,11 @@
     tools:context=".easy">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Score"
         android:layout_width="165dp"
         android:layout_height="41dp"
-        android:layout_marginTop="44dp"
-        android:text="Score"
+        android:layout_marginTop="112dp"
+        android:text="Score: 0"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#0D8DDF"
@@ -26,27 +26,52 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="50dp"
         android:ems="10"
         android:hint="Number"
         android:inputType="number"
         android:minHeight="48dp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/Score" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="36dp"
         android:onClick="guess"
         android:text="Guess"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guess" />
+
+    <TextView
+        android:id="@+id/AttemptsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attempts: 7"
+        android:textAlignment="center"
+        android:textColor="#FA0606"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Score" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
