@@ -3,6 +3,7 @@ package com.example.testing;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class StatsScreen extends AppCompatActivity {
 
@@ -27,6 +28,10 @@ public class StatsScreen extends AppCompatActivity {
         totalPoint = totalPoint + PointcalcEasy + PointcalcMed + PointcalcHard;
         totalAttempt = totalAttempt + AttemptCalcEasy + AttemptCalcMed + AttemptCalcHard;
         WinRate = totalPoint / totalAttempt;
+        TextView WinR = (TextView) findViewById(R.id.WinR);
+        TextView PoinT = (TextView) findViewById(R.id.PoinT);
+        WinR.setText((int) WinRate);
+        PoinT.setText((int)totalPoint);
 
     }
 
