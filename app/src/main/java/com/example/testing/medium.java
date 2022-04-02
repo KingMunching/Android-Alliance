@@ -10,7 +10,8 @@ import android.widget.Toast;
 import java.util.Random;
 
 public class medium extends AppCompatActivity {
-
+    private static int AttempCount;
+    private static int Points;
     int n;
     String message = "";
 
@@ -38,6 +39,22 @@ public class medium extends AppCompatActivity {
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
         }
     }
+    public static int getAttemptCount(){
+        return AttempCount;
+    }
+
+    public static int getPoints(){
+        return Points;
+    }
+
+    public void setAttempCount(int AttemptCount){
+        this.AttempCount = AttemptCount;
+    }
+
+    public void setPoint(int Points){
+        this.Points = Points;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

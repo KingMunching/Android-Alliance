@@ -19,9 +19,13 @@ public class StatsScreen extends AppCompatActivity {
     public StatsScreen(){
         int PointcalcEasy = easy.getPoints();
         int AttemptCalcEasy = easy.getAttemptCount();
+        int PointcalcMed = medium.getPoints();
+        int AttemptCalcMed = medium.getAttemptCount();
+        int PointcalcHard = hard.getPoints();
+        int AttemptCalcHard = hard.getAttemptCount();
 
-        totalPoint = totalPoint + PointcalcEasy;
-        totalAttempt = totalAttempt + AttemptCalcEasy;
+        totalPoint = totalPoint + PointcalcEasy + PointcalcMed + PointcalcHard;
+        totalAttempt = totalAttempt + AttemptCalcEasy + AttemptCalcMed + AttemptCalcHard;
         WinRate = totalPoint / totalAttempt;
 
     }
