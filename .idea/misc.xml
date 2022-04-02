@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Jacky/AndroidStudioProjects/Android-Alliance/app/src/main/res/layout/activity_attempts_screen.xml" value="0.3625" />
+        <entry key="..\:/Users/Jacky/AndroidStudioProjects/Android-Alliance/app/src/main/res/layout/activity_hard.xml" value="0.3625" />
+        <entry key="..\:/Users/Jacky/AndroidStudioProjects/Android-Alliance/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/Jacky/AndroidStudioProjects/Android-Alliance/app/src/main/res/layout/activity_medium.xml" value="0.3625" />
+        <entry key="..\:/Users/Jacky/AndroidStudioProjects/Android-Alliance/app/src/main/res/layout/activity_stats_screen.xml" value="0.3625" />
+        <entry key="..\:/Users/Jacky/AndroidStudioProjects/Android-Alliance/app/src/main/res/layout/activity_username.xml" value="0.3625" />
+        <entry key="..\:/Users/Jacky/AndroidStudioProjects/Android-Alliance/app/src/main/res/layout/easy.xml" value="0.3625" />
         <entry key="..\:/Users/kingm/AndroidStudioProjects/Android-Alliance2/app/src/main/res/layout/activity_attempts_screen.xml" value="0.264" />
         <entry key="..\:/Users/kingm/AndroidStudioProjects/Android-Alliance2/app/src/main/res/layout/activity_game_screen.xml" value="0.264" />
         <entry key="..\:/Users/kingm/AndroidStudioProjects/Android-Alliance2/app/src/main/res/layout/activity_main.xml" value="0.176" />

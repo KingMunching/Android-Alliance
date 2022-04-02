@@ -40,7 +40,7 @@ public class easy extends AppCompatActivity {
 
             }
             else if (attempts == 0){
-                message = "You Lost!";
+                message = "You Lost";
                 AttempCount++;
             }
 

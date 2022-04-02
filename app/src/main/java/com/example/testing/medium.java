@@ -25,12 +25,13 @@ public class medium extends AppCompatActivity {
         EditText guess2 = (EditText) findViewById(R.id.guess2);
         int guess2Int = Integer.parseInt(guess2.getText().toString());
         for (int i = 0; i < 8; i++) {
-            if (n != guess2Int) {
-                message = "guess2 again";
-            }
-            else if (i == 7){
+            if (i == 7){
                 message = "You Lost!";
             }
+            if (n != guess2Int) {
+                message = "guess again";
+            }
+
             else {
                 message = "Correct!";
                 Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
