@@ -10,7 +10,7 @@
         android:id="@+id/textView4"
         android:layout_width="165dp"
         android:layout_height="41dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="80dp"
         android:text="Score"
         android:textAlignment="center"
         android:textColor="#0D8DDF"
@@ -34,6 +34,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+    <TextView
+        android:id="@+id/AttemptsViewM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attempts: 10"
+        android:textAlignment="center"
+        android:textColor="#FA0606"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
@@ -44,4 +58,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guess2" />
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

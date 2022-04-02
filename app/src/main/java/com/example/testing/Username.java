@@ -3,6 +3,7 @@ package com.example.testing;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,18 +30,15 @@ public class Username extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Username.this, AttemptsScreen.class);
-                 uS = et.getText().toString();
-                i.putExtra("Value",uS);
+
+                String name = et.getText().toString();
+
+                i.putExtra("Value", name);
+
                 startActivity(i);
             }
         });
 
 
     }
-
-//    public void toAttemptsScreen(){
-//        Intent i = new Intent(this, AttemptsScreen.class);
-//        startActivity(i);
-//    }
-
 }

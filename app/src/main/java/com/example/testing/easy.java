@@ -12,12 +12,16 @@ import android.widget.Toast;
 import java.util.Random;
 
 public class easy extends AppCompatActivity {
-//    private static int AttempCount;
-//    private static int Points;
+
     int n;
+    int attempts = 5;
 
-    private int attempts = 7;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.easy);
+    }
 
     public void randomNumberGenerator(){
         Random rand = new  Random();
@@ -41,38 +45,24 @@ public class easy extends AppCompatActivity {
         }
         if (attempts == 0) {
             Intent i = new Intent(this, StatsScreen.class);
+            String score = Integer.toString(attempts);
+            i.putExtra("Status", score);
+            String name = getIntent().getStringExtra("Value");
+            i.putExtra("Value", name);
             startActivity(i);
 
         }
 
         if (n == guessInt) {
             Intent z = new Intent(this, StatsScreen.class);
+            String score = Integer.toString(attempts);
+            z.putExtra("Status", score);
+            String name = getIntent().getStringExtra("Value");
+            z.putExtra("Value", name);
             startActivity(z);
         }
 
     }
-//    }
-//    public static int getAttemptCount(){
-//        return AttempCount;
-//    }
-//
-//    public static int getPoints(){
-//        return Points;
-//    }
-//
-//    public void setAttempCount(int AttemptCount){
-//        this.AttempCount = AttemptCount;
-//    }
-//
-//    public void setPoint(int Points){
-//        this.Points = Points;
-//    }
 
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.easy);
-    }
 }

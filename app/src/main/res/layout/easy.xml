@@ -54,7 +54,7 @@
         android:id="@+id/AttemptsView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Attempts: 7"
+        android:text="Attempts: 5"
         android:textAlignment="center"
         android:textColor="#FA0606"
         android:textSize="34sp"
