@@ -24,11 +24,11 @@ public class hard extends AppCompatActivity {
         EditText guess3 = (EditText) findViewById(R.id.guess3);
         int guess3Int = Integer.parseInt(guess3.getText().toString());
         for (int i = 0; i < 8; i++) {
-            if (n != guess3Int) {
-                message = "guess3 again";
-            }
-            else if (i == 7){
+            if (i == 7){
                 message = "You Lost!";
+            }
+            if (n != guess3Int) {
+                message = "guess again";
             }
             else {
                 message = "Correct!";
