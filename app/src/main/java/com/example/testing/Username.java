@@ -23,10 +23,10 @@ public class Username extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 toAttemptsScreen();
-                String uS = button.getText().toString();
+                String UserN = button.getText().toString();
             }
         });
-
+    
 
     }
 

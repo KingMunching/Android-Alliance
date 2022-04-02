@@ -12,12 +12,10 @@ public class StatsScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats_screen);
 
-    }
-    int totalPoint = 0;
-    int totalAttempt = 0;
-    double WinRate;
+        int totalPoint = 0;
+        int totalAttempt = 0;
+        double WinRate;
 
-    public StatsScreen(){
         int PointcalcEasy = easy.getPoints();
         int AttemptCalcEasy = easy.getAttemptCount();
         int PointcalcMed = medium.getPoints();
@@ -32,7 +30,6 @@ public class StatsScreen extends AppCompatActivity {
         TextView PoinT = (TextView) findViewById(R.id.PoinT);
         WinR.setText((int) WinRate);
         PoinT.setText((int)totalPoint);
-
     }
 
 }
