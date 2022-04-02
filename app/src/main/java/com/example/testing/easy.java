@@ -37,19 +37,19 @@ public class easy extends AppCompatActivity {
                 attempView.setText("Attempts: " + attempts);
 
             }
-            if (attempts == 0){
-                startActivity(new Intent(this,StatsScreen.class));
+            if(attempts == 0){
+                Intent i = new Intent(this, StatsScreen.class);
+                startActivity(i);
             }
 
-            else {
-                message = "Correct!";
-                Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-                point++;
-                attempts--;
-                TextView txt = (TextView) findViewById(R.id.Score);
-                txt.setText("Score: " +point);
-                TextView result = (TextView) findViewById(R.id.result);
-                result.setText("Correct!");
+
+            if(n == guessInt){
+                Intent i = new Intent(this, StatsScreen.class);
+                startActivity(i);
+//                TextView txt = (TextView) findViewById(R.id.Score);
+//                txt.setText("Score: " + point);
+//                TextView result = (TextView) findViewById(R.id.result);
+//                result.setText("Correct!");
 
             }
 
