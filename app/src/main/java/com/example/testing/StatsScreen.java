@@ -10,6 +10,7 @@ public class StatsScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats_screen);
+
     }
     int totalPoint = 0;
     int totalAttempt = 0;
