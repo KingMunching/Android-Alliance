@@ -27,7 +27,7 @@ public class StatsScreen extends AppCompatActivity {
 
         totalPoint = totalPoint + PointcalcEasy + PointcalcMed + PointcalcHard;
         totalAttempt = totalAttempt + AttemptCalcEasy + AttemptCalcMed + AttemptCalcHard;
-        WinRate = totalPoint / totalAttempt;
+        WinRate = (totalPoint / totalAttempt)*100;
         TextView WinR = (TextView) findViewById(R.id.WinR);
         TextView PoinT = (TextView) findViewById(R.id.PoinT);
         WinR.setText((int) WinRate);
