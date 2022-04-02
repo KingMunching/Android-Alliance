@@ -21,6 +21,7 @@ public class medium extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medium);
+        randomNumberGenerator();
     }
 
     public void randomNumberGenerator(){
@@ -29,10 +30,19 @@ public class medium extends AppCompatActivity {
     }
 
     public void guess2(View view) {
-        randomNumberGenerator();
         EditText guess = (EditText) findViewById(R.id.guess2);
         int guessInt = Integer.parseInt(guess.getText().toString());
 
+
+
+        if(n > guessInt){
+            TextView c = (TextView) findViewById(R.id.Score);
+            c.setText("HIGHER!");
+        }
+        if(n < guessInt){
+            TextView c = (TextView) findViewById(R.id.Score);
+            c.setText("LOWER!");
+        }
 
         if (n != guessInt) {
 
@@ -46,9 +56,13 @@ public class medium extends AppCompatActivity {
         if (attempts == 0) {
             Intent i = new Intent(this, StatsScreen.class);
             String score = Integer.toString(attempts);
+            String number = Integer.toString(n);
             i.putExtra("Status", score);
+            i.putExtra("Number", number);
             String name = getIntent().getStringExtra("Value");
             i.putExtra("Value", name);
+            String winOrLose = "lose";
+            i.putExtra("W",winOrLose);
             startActivity(i);
 
         }
@@ -56,9 +70,14 @@ public class medium extends AppCompatActivity {
         if (n == guessInt) {
             Intent z = new Intent(this, StatsScreen.class);
             String score = Integer.toString(attempts);
+            String number = Integer.toString(n);
+            z.putExtra("Status", score);
+            z.putExtra("Number", number);
             z.putExtra("Status", score);
             String name = getIntent().getStringExtra("Value");
             z.putExtra("Value", name);
+            String winOrLose = "win";
+            z.putExtra("W",winOrLose);
             startActivity(z);
         }
 

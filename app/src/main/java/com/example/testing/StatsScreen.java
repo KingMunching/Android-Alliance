@@ -13,21 +13,40 @@ public class StatsScreen extends AppCompatActivity {
 
     Button button1, button2;
     String name;
-    TextView tv, ev;
-    //EditText ev;
+    TextView tv, ev, tv2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats_screen);
 
-        ev = findViewById(R.id.Status); // finds Status textView in StatScreen.
-        String score = getIntent().getStringExtra("Status"); // gets intent and retrieves status.
-        ev.setText("Attempts remaining:" + score); // set textView as score.
+
+        String a = getIntent().getStringExtra("W");
+
+        if(a.equals("win")){
+
+            ev = findViewById(R.id.Status); // finds Status textView in StatScreen.
+            String score = getIntent().getStringExtra("Status"); // gets intent and retrieves status.
+            ev.setText("YOU GUESSED CORRECTLY!!\n You had "+ score +" Attempts Left"); // set textView as score.
+            String num = getIntent().getStringExtra("Number");
+            tv2 = findViewById(R.id.CorrectNumber);
+            tv2.setText("The Correct Number was\n" + num);
+        }
+
+        if(a.equals("lose")){
+            ev = findViewById(R.id.Status); // finds Status textView in StatScreen.
+            ev.setText("You Ran out of Attempts\nBetter Luck Next Time!");// set textView as score.
+            String num = getIntent().getStringExtra("Number");
+            tv2 = findViewById(R.id.CorrectNumber);
+            tv2.setText("The Correct Number was\n" + num);
+
+        }
+
+
 
         tv = findViewById(R.id.nameTV);
         String name = getIntent().getStringExtra("Value"); // gets intent and retrieves status.
-        tv.setText("USERNAME:" + name); // set textView as score.
+        tv.setText(name); // set textView as score.
 
         button1 = findViewById(R.id.playAgain);
         button1.setOnClickListener(new View.OnClickListener() {

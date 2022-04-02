@@ -21,6 +21,7 @@ public class hard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hard);
+        randomNumberGenerator();
     }
 
     public void randomNumberGenerator(){
@@ -29,10 +30,18 @@ public class hard extends AppCompatActivity {
     }
 
     public void guess3(View view) {
-        randomNumberGenerator();
         EditText guess = (EditText) findViewById(R.id.guess3);
         int guessInt = Integer.parseInt(guess.getText().toString());
 
+
+        if(n > guessInt){
+            TextView c = (TextView) findViewById(R.id.ok3);
+            c.setText("HIGHER!");
+        }
+        if(n < guessInt){
+            TextView c = (TextView) findViewById(R.id.ok3);
+            c.setText("LOWER!");
+        }
 
         if (n != guessInt) {
 
@@ -46,9 +55,13 @@ public class hard extends AppCompatActivity {
         if (attempts == 0) {
             Intent i = new Intent(this, StatsScreen.class);
             String score = Integer.toString(attempts);
+            String number = Integer.toString(n);
             i.putExtra("Status", score);
+            i.putExtra("Number", number);
             String name = getIntent().getStringExtra("Value");
             i.putExtra("Value", name);
+            String winOrLose = "lose";
+            i.putExtra("W",winOrLose);
             startActivity(i);
 
         }
@@ -56,9 +69,14 @@ public class hard extends AppCompatActivity {
         if (n == guessInt) {
             Intent z = new Intent(this, StatsScreen.class);
             String score = Integer.toString(attempts);
+            String number = Integer.toString(n);
+            z.putExtra("Status", score);
+            z.putExtra("Number", number);
             z.putExtra("Status", score);
             String name = getIntent().getStringExtra("Value");
             z.putExtra("Value", name);
+            String winOrLose = "win";
+            z.putExtra("W",winOrLose);
             startActivity(z);
         }
 
