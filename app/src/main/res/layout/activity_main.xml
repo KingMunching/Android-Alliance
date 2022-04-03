@@ -24,64 +24,32 @@
         app:layout_constraintVertical_bias="0.069" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="268dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="sans-serif"
-        android:text="• Choose A Theme"
-        android:textAlignment="center"
-        android:textColor="#FA0606"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Instruction" />
-
-    <TextView
         android:id="@+id/textView6"
         android:layout_width="268dp"
         android:layout_height="48dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="sans-serif"
-        android:text="• Enter A Unique Username"
+        android:text="• Enter A Username"
         android:textAlignment="center"
         android:textColor="#FA0606"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/Instruction" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="268dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="sans-serif"
-        android:text="• Choose a Difficulty"
+        android:text="• Choose A Difficulty"
         android:textAlignment="center"
         android:textColor="#FA0606"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="268dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif"
-        android:text="• Choose The Amount of Attempts"
-        android:textAlignment="center"
-        android:textColor="#FA0606"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/Instruction"
@@ -112,8 +80,25 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="• Guess The Number Depending\nOn The Difficulty"
+        android:textAlignment="center"
+        android:textColor="#FA0606"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/easy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.223" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

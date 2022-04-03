@@ -14,7 +14,7 @@ import java.util.Random;
 public class medium extends AppCompatActivity {
     int n;
 
-    int attempts = 10;
+    int attempts = 7;
 
 
     @Override
@@ -36,11 +36,11 @@ public class medium extends AppCompatActivity {
 
 
         if(n > guessInt){
-            TextView c = (TextView) findViewById(R.id.Score);
+            TextView c = (TextView) findViewById(R.id.textView4);
             c.setText("HIGHER!");
         }
         if(n < guessInt){
-            TextView c = (TextView) findViewById(R.id.Score);
+            TextView c = (TextView) findViewById(R.id.textView4);
             c.setText("LOWER!");
         }
 

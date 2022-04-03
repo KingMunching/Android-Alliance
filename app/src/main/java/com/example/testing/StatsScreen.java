@@ -27,7 +27,10 @@ public class StatsScreen extends AppCompatActivity {
 
             ev = findViewById(R.id.Status); // finds Status textView in StatScreen.
             String score = getIntent().getStringExtra("Status"); // gets intent and retrieves status.
-            ev.setText("YOU GUESSED CORRECTLY!!\n You had "+ score +" Attempts Left"); // set textView as score.
+            if(score.equals("1")){
+                ev.setText("YOU GUESSED CORRECTLY!!\n You had "+ score +" Attempt Left");
+            }
+            ev.setText("YOU GUESSED CORRECTLY!!\n You had "+ score +" Attempts Left");
             String num = getIntent().getStringExtra("Number");
             tv2 = findViewById(R.id.CorrectNumber);
             tv2.setText("The Correct Number was\n" + num);
