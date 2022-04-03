@@ -21,7 +21,6 @@ public class Username extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_username);
-
         button = findViewById(R.id.UsernameBox);
         et = findViewById(R.id.editTextTextPersonName);
 
@@ -29,6 +28,7 @@ public class Username extends AppCompatActivity {
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View view) {
 
                 Intent i = new Intent(Username.this, AttemptsScreen.class);
