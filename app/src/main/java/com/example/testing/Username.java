@@ -45,16 +45,5 @@ public class Username extends AppCompatActivity {
         });
 
     }
-    public void toDifficultyScreen(){
-        Intent i = new Intent(this,AttemptsScreen.class);
-        String name = et.getText().toString();
-        if (name.matches("")) {
-            TextView b = (TextView) findViewById(R.id.box);
-            b.setText("Please Enter A Username");
-        } else {
-            i.putExtra("Value", name);
 
-            startActivity(i);
-        }
-    }
 }
