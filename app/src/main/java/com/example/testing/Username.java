@@ -44,6 +44,6 @@ public class Username extends AppCompatActivity {
             }
         });
 
-
     }
+
 }

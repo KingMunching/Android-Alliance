@@ -31,7 +31,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameTV"
-        app:layout_constraintVertical_bias="0.105" />
+        app:layout_constraintVertical_bias="0.071" />
 
     <Button
         android:id="@+id/playAgain"
@@ -62,10 +62,11 @@
         android:textAlignment="center"
         android:textColor="#31AA37"
         android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/playAgain"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Status" />
+        app:layout_constraintTop_toBottomOf="@+id/Status"
+        app:layout_constraintVertical_bias="0.291" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

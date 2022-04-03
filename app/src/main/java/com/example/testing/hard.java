@@ -14,7 +14,7 @@ import java.util.Random;
 public class hard extends AppCompatActivity {
     int n;
 
-    int attempts = 20;
+    int attempts = 10;
 
 
     @Override
